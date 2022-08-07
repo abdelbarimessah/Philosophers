@@ -5,25 +5,24 @@
 #                                                     +:+ +:+         +:+      #
 #    By: amessah <amessah@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/08 02:03:06 by amessah           #+#    #+#              #
-#    Updated: 2022/07/18 15:04:31 by amessah          ###   ########.fr        #
+#    Created: 2022/07/30 00:39:02 by amessah           #+#    #+#              #
+#    Updated: 2022/07/30 00:39:03 by amessah          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = philo
+NAME = philo_bonus
 
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-INCLUDE = philo.h
+INCLUDE = philo_bonus.h
 
-src =  philo.c	\
-	   init.c	\
-	   ft_outils.c \
-	   ft_outils2.c \
-	   start_ph.c	\
-
+src = philo_bonus.c		\
+	  ft_outils_bonus.c	\
+	  init_bonus.c		\
+	  start_ph_bonus.c	\
+	   
 OBJECTS = $(src:.c=.o)
 
 all: $(NAME)
